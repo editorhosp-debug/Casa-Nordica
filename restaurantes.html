@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <style>
-:root{--bg-main:#F5F7FA;--bg-card:#ffffff;--text-primary:#1E3A5F;--text-secondary:#4A6078;--text-muted:#6B7B8C;--primary:#1E3A5F;--accent:#4A90A4;--border:#E1E8ED;--shadow:0 2px 8px rgba(30,58,95,0.08)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:var(--bg-main);color:var(--text-primary);line-height:1.6}h1,h2,h3{font-family:'Playfair Display',serif}.navbar{background:rgba(245,247,250,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1000}.nav-container{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;height:60px}.logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--primary);text-decoration:none}.container{max-width:1000px;margin:0 auto;padding:0 1.5rem}.section-title{text-align:center;font-size:2rem;margin-bottom:0.5rem;color:var(--primary)}.section-title::after{content:'';display:block;width:60px;height:3px;background:var(--accent);margin:0.75rem auto 0;border-radius:2px}.subtitle{text-align:center;color:var(--text-muted);margin-bottom:2rem}.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}.card{background:var(--bg-card);padding:1.25rem;border-radius:12px;box-shadow:var(--shadow)}.card-icon{width:32px;height:32px;stroke:var(--accent);margin-bottom:0.75rem}.card-title{font-size:1rem;color:var(--primary);margin-bottom:0.5rem}.card-description{color:var(--text-muted);font-size:0.875rem;margin-bottom:1rem;line-height:1.5}.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;width:100%;padding:0.625rem 1rem;background:var(--bg-main);border:1px solid var(--border);color:var(--primary);border-radius:8px;font-weight:500;text-decoration:none;font-size:0.85rem;transition:all 0.2s}.btn:hover{background:var(--primary);color:#fff;border-color:var(--primary)}.btn svg{width:14px;height:14px}.section-header{font-size:1.25rem;color:var(--primary);margin:2rem 0 1rem;padding-bottom:0.5rem;border-bottom:2px solid var(--border)}footer{background:var(--primary);color:#fff;padding:1.5rem;text-align:center;margin-top:3rem}.info-note{background:#FFF9E6;border-left:4px solid #F5A623;padding:1rem;border-radius:0 8px 8px 0;margin-bottom:2rem}
+:root{--bg-main:#F5F7FA;--bg-card:#ffffff;--text-primary:#1E3A5F;--text-secondary:#4A6078;--text-muted:#6B7B8C;--primary:#1E3A5F;--accent:#4A90A4;--border:#E1E8ED;--shadow:0 2px 8px rgba(30,58,95,0.08)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:var(--bg-main);color:var(--text-primary);line-height:1.6}h1,h2,h3{font-family:'Playfair Display',serif}.navbar{background:rgba(245,247,250,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1000}.nav-container{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;height:60px}.logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--primary);text-decoration:none}.container{max-width:1000px;margin:0 auto;padding:0 1.5rem}.section-title{text-align:center;font-size:2rem;margin-bottom:0.5rem;color:var(--primary)}.section-title::after{content:'';display:block;width:60px;height:3px;background:var(--accent);margin:0.75rem auto 0;border-radius:2px}.subtitle{text-align:center;color:var(--text-muted);margin-bottom:2rem}.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}.card{background:var(--bg-card);padding:1.25rem;border-radius:12px;box-shadow:var(--shadow)}.card-icon{width:32px;height:32px;stroke:var(--accent);margin-bottom:0.75rem}.card-title{font-size:1rem;color:var(--primary);margin-bottom:0.5rem}.card-description{color:var(--text-muted);font-size:0.875rem;margin-bottom:1rem;line-height:1.5}.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;width:100%;padding:0.625rem 1rem;background:var(--bg-main);border:1px solid var(--border);color:var(--primary);border-radius:8px;font-weight:500;text-decoration:none;font-size:0.85rem;transition:all 0.2s}.btn:hover{background:var(--primary);color:#fff;border-color:var(--primary)}.btn svg{width:14px;height:14px}.section-header{font-size:1.25rem;color:var(--primary);margin:2rem 0 1rem;padding-bottom:0.5rem;border-bottom:2px solid var(--border)}.info-note{background:#E1E8ED;padding:1rem;border-radius:8px;margin-bottom:2rem;border-left:4px solid var(--accent)}footer{background:var(--primary);color:#fff;padding:1.5rem;text-align:center;margin-top:3rem}
   </style>
 </head>
 <body>
@@ -25,6 +25,109 @@
 
       <div class="info-note">
         <p style="color: var(--text-secondary); font-size: 0.9rem;"><strong>Dica:</strong> Pedidos para entrega devem ser feitos até 21h. Avise o caseiro qual fornecedor fará a entrega.</p>
+      </div>
+
+      <h2 class="section-header">Restaurantes e Experiências</h2>
+      <div class="card-grid">
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+            <path d="M7 2v20"></path>
+            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
+          </svg>
+          <h3 class="card-title">OLIQ – Azeites & Experiência Gastronômica</h3>
+          <p class="card-description">Azeites artesanais e experiências gastronômicas únicas.</p>
+          <a href="https://maps.google.com/?q=OLIQ+S%C3%A3o+Bento+do+Sapuca%C3%AD" target="_blank" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ver no Mapa
+          </a>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+          <h3 class="card-title">Mantike – Café Lounge</h3>
+          <p class="card-description">Ambiente aconchegante para cafés e lanches.</p>
+          <a href="https://maps.google.com/?q=Emp%C3%B3rio+Mantike+Sapuca%C3%AD+Mirim" target="_blank" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ver no Mapa
+          </a>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+            <path d="M7 2v20"></path>
+            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
+          </svg>
+          <h3 class="card-title">Essenza – Vinícola Boutique</h3>
+          <p class="card-description">Vinícola boutique com vinhos selecionados.</p>
+          <a href="https://maps.google.com/?q=Essenza+Vin%C3%ADcola+Santo+Ant%C3%B4nio+do+Pinhal" target="_blank" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ver no Mapa
+          </a>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+          <h3 class="card-title">Cremuminas – Empório, Café & Pizzaria</h3>
+          <p class="card-description">Empório local com ótimas opções de café e pizza.</p>
+          <a href="https://maps.google.com/?q=Cremuminas+Sapuca%C3%AD+Mirim" target="_blank" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ver no Mapa
+          </a>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+            <path d="M7 2v20"></path>
+            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
+          </svg>
+          <h3 class="card-title">Janela com Tramelas</h3>
+          <p class="card-description">Culinária regional em ambiente charmoso.</p>
+          <a href="https://maps.google.com/?q=Janela+com+Tramelas+Gon%C3%A7alves+MG" target="_blank" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ver no Mapa
+          </a>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+            <path d="M7 2v20"></path>
+            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
+          </svg>
+          <h3 class="card-title">Vinícola Santa Maria</h3>
+          <p class="card-description">Vinhos de alta qualidade produzidos na região.</p>
+          <a href="https://maps.google.com/?q=Vin%C3%ADcola+Santa+Maria+S%C3%A3o+Bento+do+Sapuca%C3%AD" target="_blank" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ver no Mapa
+          </a>
+        </div>
       </div>
 
       <h2 class="section-header">Supermercados</h2>
@@ -70,111 +173,6 @@
           <h3 class="card-title">Armazém da Clarice</h3>
           <p class="card-description">Armazém local com itens essenciais.</p>
           <a href="https://www.google.com/maps/search/Armaz%C3%A9m+da+Clarice+Sapuca%C3%AD+Mirim+MG" target="_blank" class="btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Ver no Mapa
-          </a>
-        </div>
-      </div>
-
-      <h2 class="section-header">Restaurantes</h2>
-      <div class="card-grid">
-        <div class="card">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
-            <path d="M7 2v20"></path>
-            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
-          </svg>
-          <h3 class="card-title">Restaurante Panela Mineira</h3>
-          <p class="card-description">Comida caseira mineira, café, almoço e marmitex.</p>
-          <a href="https://www.google.com/maps/place/Restaurante+Panela+Mineira" target="_blank" class="btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Ver no Mapa
-          </a>
-        </div>
-
-        <div class="card">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
-            <path d="M7 2v20"></path>
-            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
-          </svg>
-          <h3 class="card-title">Cantina Tatini</h3>
-          <p class="card-description">Restaurante italiano sob reserva, clima intimista.</p>
-          <a href="https://www.google.com/maps/place/Restaurante+Tatini" target="_blank" class="btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Ver no Mapa
-          </a>
-        </div>
-
-        <div class="card">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
-            <path d="M7 2v20"></path>
-            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
-          </svg>
-          <h3 class="card-title">Sabor da Serra</h3>
-          <p class="card-description">Restaurante e pizzaria em São Bento do Sapucaí.</p>
-          <a href="https://www.google.com/maps/place/Restaurante+e+Pizzaria+Sabor+da+Serra" target="_blank" class="btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Ver no Mapa
-          </a>
-        </div>
-      </div>
-
-      <h2 class="section-header">Pizzarias e Lanches</h2>
-      <div class="card-grid">
-        <div class="card">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M12 2a10 10 0 0 0 0 20"></path>
-          </svg>
-          <h3 class="card-title">Pizzaria Casarão</h3>
-          <p class="card-description">Pizzaria tradicional com ambiente agradável e chopp.</p>
-          <a href="https://www.google.com/maps/place/Pizzaria+e+Chopperia+Casar%C3%A3o" target="_blank" class="btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Ver no Mapa
-          </a>
-        </div>
-
-        <div class="card">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-          </svg>
-          <h3 class="card-title">Central Pub</h3>
-          <p class="card-description">Pub descontraído para lanches e bebidas.</p>
-          <a href="https://www.google.com/maps/place/Central+Pub" target="_blank" class="btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Ver no Mapa
-          </a>
-        </div>
-
-        <div class="card">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
-            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"></path>
-          </svg>
-          <h3 class="card-title">Mundo Doce</h3>
-          <p class="card-description">Cafeteria e confeitaria com doces e cafés.</p>
-          <a href="https://www.google.com/maps/place/Mundo+Doce" target="_blank" class="btn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
               <circle cx="12" cy="10" r="3"></circle>
