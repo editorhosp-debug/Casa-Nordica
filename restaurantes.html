@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <style>
-:root{--bg-main:#F5F7FA;--bg-card:#ffffff;--text-primary:#1E3A5F;--text-secondary:#4A6078;--text-muted:#6B7B8C;--primary:#1E3A5F;--accent:#4A90A4;--border:#E1E8ED;--shadow:0 2px 8px rgba(30,58,95,0.08)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:var(--bg-main);color:var(--text-primary);line-height:1.6}h1,h2,h3{font-family:'Playfair Display',serif}.navbar{background:rgba(245,247,250,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1000}.nav-container{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;height:60px}.logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--primary);text-decoration:none}.container{max-width:1000px;margin:0 auto;padding:0 1.5rem}.section-title{text-align:center;font-size:2rem;margin-bottom:0.5rem;color:var(--primary)}.section-title::after{content:'';display:block;width:60px;height:3px;background:var(--accent);margin:0.75rem auto 0;border-radius:2px}.subtitle{text-align:center;color:var(--text-muted);margin-bottom:2rem}.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}.card{background:var(--bg-card);padding:1.25rem;border-radius:12px;box-shadow:var(--shadow)}.card-icon{width:32px;height:32px;stroke:var(--accent);margin-bottom:0.75rem}.card-title{font-size:1rem;color:var(--primary);margin-bottom:0.5rem}.card-description{color:var(--text-muted);font-size:0.875rem;margin-bottom:1rem;line-height:1.5}.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;width:100%;padding:0.625rem 1rem;background:var(--bg-main);border:1px solid var(--border);color:var(--primary);border-radius:8px;font-weight:500;text-decoration:none;font-size:0.85rem;transition:all 0.2s}.btn:hover{background:var(--primary);color:#fff;border-color:var(--primary)}.btn svg{width:14px;height:14px}.section-header{font-size:1.25rem;color:var(--primary);margin:2rem 0 1rem;padding-bottom:0.5rem;border-bottom:2px solid var(--border)}.info-note{background:#E1E8ED;padding:1rem;border-radius:8px;margin-bottom:2rem;border-left:4px solid var(--accent)}footer{background:var(--primary);color:#fff;padding:1.5rem;text-align:center;margin-top:3rem}
+:root{--bg-main:#F5F7FA;--bg-card:#ffffff;--text-primary:#1E3A5F;--text-secondary:#4A6078;--text-muted:#6B7B8C;--primary:#1E3A5F;--accent:#4A90A4;--border:#E1E8ED;--shadow:0 2px 8px rgba(30,58,95,0.08)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:var(--bg-main);color:var(--text-primary);line-height:1.6}h1,h2,h3{font-family:'Playfair Display',serif}.navbar{background:rgba(245,247,250,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1000}.nav-container{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;height:60px}.logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--primary);text-decoration:none}.container{max-width:1000px;margin:0 auto;padding:0 1.5rem}.section-title{text-align:center;font-size:2rem;margin-bottom:0.5rem;color:var(--primary)}.section-title::after{content:'';display:block;width:60px;height:3px;background:var(--accent);margin:0.75rem auto 0;border-radius:2px}.subtitle{text-align:center;color:var(--text-muted);margin-bottom:2rem}.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}.card{background:var(--bg-card);padding:1.25rem;border-radius:12px;box-shadow:var(--shadow)}.card-icon{width:32px;height:32px;stroke:var(--accent);margin-bottom:0.75rem}.card-title{font-size:1rem;color:var(--primary);margin-bottom:0.5rem}.card-description{color:var(--text-muted);font-size:0.875rem;margin-bottom:1rem;line-height:1.5}.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;width:100%;padding:0.625rem 1rem;background:var(--bg-main);border:1px solid var(--border);color:var(--primary);border-radius:8px;font-weight:500;text-decoration:none;font-size:0.85rem;transition:all 0.2s}.btn:hover{background:var(--primary);color:#fff;border-color:var(--primary)}.btn svg{width:14px;height:14px}.section-header{font-size:1.25rem;color:var(--primary);margin:2rem 0 1rem;border-left:4px solid var(--accent);padding-left:1rem}.info-note{background:#e1e8ed;padding:1rem;border-radius:8px;margin-bottom:2rem;border-left:4px solid var(--primary)}footer{background:var(--primary);color:#fff;padding:1.5rem;text-align:center;margin-top:3rem}
   </style>
 </head>
 <body>
@@ -29,6 +29,57 @@
 
       <h2 class="section-header">Restaurantes e Experiências</h2>
       <div class="card-grid">
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+            <path d="M7 2v20"></path>
+            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
+          </svg>
+          <h3 class="card-title">Restaurante Tatini</h3>
+          <p class="card-description">Culinária refinada e ambiente agradável.</p>
+          <a href="https://www.google.com/maps/place/Restaurante+Tatini/@-22.7517353,-45.7546857,17z/data=!3m1!4b1!4m6!3m5!1s0x94cc654d611f4337:0x8228b757fcfb670!8m2!3d-22.7517353!4d-45.7546857!16s%2Fg%2F1tddywy0?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ver no Mapa
+          </a>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+            <path d="M7 2v20"></path>
+            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
+          </svg>
+          <h3 class="card-title">Panela Mineira</h3>
+          <p class="card-description">O melhor da comida mineira tradicional.</p>
+          <a href="https://www.google.com/maps/place/Restaurante+Panela+Mineira/@-22.7436759,-45.7425719,17z/data=!3m1!4b1!4m6!3m5!1s0x94cc7ab318cb05f1:0xc70f44745c215232!8m2!3d-22.7436809!4d-45.739997!16s%2Fg%2F11g8w6dc6l?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ver no Mapa
+          </a>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+            <path d="M7 2v20"></path>
+            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"></path>
+          </svg>
+          <h3 class="card-title">Restaurante Pedra do Baú</h3>
+          <p class="card-description">Gastronomia com vista privilegiada para o Baú.</p>
+          <a href="https://www.google.com/maps/place/Restaurante+Pedra+do+Ba%C3%BA/@-22.680326,-45.6658148,17z/data=!3m1!4b1!4m6!3m5!1s0x94cc7c620bbfefb1:0x36b0da8c0620363f!8m2!3d-22.680331!4d-45.6632399!16s%2Fg%2F1z44b2jw5?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ver no Mapa
+          </a>
+        </div>
+
         <div class="card">
           <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
